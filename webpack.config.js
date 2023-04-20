@@ -1,6 +1,7 @@
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
+const path = require("path");
 
 let mode = `development`;
 if (process.env.node_env === `production`) {
@@ -13,6 +14,8 @@ module.exports = {
     hot: true,
   },
   output: {
+      path: path.resolve(__dirname, "dist"),
+    clean: true,
     assetModuleFilename: "assets/[hash][ext][query]",
   },
   plugins: [
