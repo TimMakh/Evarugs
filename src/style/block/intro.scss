@@ -42,6 +42,9 @@
   text-align: center;
   margin-bottom: 8px;
 }
+.intro__town {
+  display: none;
+}
 .intro__about {
   font-style: normal;
   font-weight: 300;
@@ -83,4 +86,66 @@
 .intro__outro-eva {
   padding: 0;
   color: #b90160;
+}
+@media (min-width: 768px) {
+  .intro {
+    justify-content: left;
+    padding-top: 62px;
+    padding-left: 66px;
+    padding-right: 450px;
+    min-width: 768px;
+    min-height: 566px;
+    background: url(../images/intro/background768px.svg);
+  }
+  .intro__logo {
+    width: 100px;
+    height: 60px;
+    margin-bottom: 61px;
+  }
+  .intro__logo-text {
+    font-size: 36px;
+    font-style: italic;
+    font-weight: 900;
+    line-height: 42px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-bottom: 9px;
+  }
+  .intro__description {
+    font-size: 40px;
+    font-weight: 900;
+    line-height: 40px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+  .intro__about {
+    display: none;
+  }
+  .intro__town {
+    display: block;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-bottom: 20px;
+  }
+  .intro__button {
+    height: 42px;
+    width: 141px;
+    border-radius: 7px;
+  }
+  .intro__button-text {
+    font-size: 15px;
+    font-weight: 900;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+  .intro__item-button {
+    padding: 0px;
+  }
+  .intro__outro {
+    display: none;
+  }
 }

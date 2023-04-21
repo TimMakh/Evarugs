@@ -1,7 +1,7 @@
 html {
   box-sizing: border-box;
   font-family: generalFont;
-  overflow-x: unset;
+  overflow-x: hidden;
 }
 li {
   list-style-type: none;
@@ -25,4 +25,7 @@ p {
   text-decoration: none;
   margin: 0;
   padding: 0;
+}
+body {
+  overflow-x: hidden;
 }

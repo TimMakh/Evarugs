@@ -49,3 +49,33 @@
   text-align: center;
   color: #8e8e8e;
 }
+@media (min-width: 768px) {
+  .review {
+    min-width: 768px;
+    min-height: 948px;
+    padding-top: 117px;
+    padding-left: 113px;
+    padding-right: 120px;
+  }
+  .review__card {
+    min-width: 536px;
+    min-height: 187px;
+  }
+  .review__feedback {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+  .review__initials {
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 15px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+  .review__foto {
+    padding-left: 193px;
+  }
+}
