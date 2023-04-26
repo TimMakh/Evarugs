@@ -9,6 +9,9 @@ if (process.env.node_env === `production`) {
 console.log(mode + `mode`);
 module.exports = {
   mode: mode,
+  devServer: {
+    hot: true,
+  },
   output: {
     assetModuleFilename: "assets/[hash][ext][query]",
   },

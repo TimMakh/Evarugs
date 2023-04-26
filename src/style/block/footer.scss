@@ -1,0 +1,74 @@
+.footer {
+  box-sizing: border-box;
+  padding-top: 61px;
+  padding-left: 44px;
+  padding-right: 53px;
+}
+.footer__list {
+  display: flex;
+  flex-direction: column;
+}
+.footer__contact {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0em;
+  text-align: center;
+  margin-bottom: 15px;
+}
+.footer__link {
+  color: rgba(0, 0, 0, 1);
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 10px;
+  letter-spacing: 0em;
+  text-align: center;
+  display: inline-block;
+  padding-left: 10px;
+}
+.footer__image {
+  padding-left: 85px;
+  margin-bottom: 14px;
+}
+.footer__social {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  margin-bottom: 6px;
+}
+.footer__about {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  margin-bottom: 14px;
+}
+.footer__link-vel {
+  padding-left: 40px;
+}
+.footer__link-mtc {
+  padding-left: 40px;
+  margin-bottom: 10px;
+}
+.footer__link-individually {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.footer__link-town {
+  padding-left: 80px;
+  margin-bottom: 40px;
+}
+@media (min-width: 768px) {
+  .footer {
+    min-height: 288px;
+    min-width: 768px;
+  }
+}
