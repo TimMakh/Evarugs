@@ -1,35 +1,42 @@
 .header {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   min-width: 321px;
   min-height: 99px;
-  padding-top: 22px;
   background: linear-gradient(
     269.91deg,
     rgba(46, 49, 146, 0.7) 0%,
     rgba(212, 20, 90, 0.7) 98.16%
   );
+  padding-top: 22px;
+  box-sizing: border-box;
 }
 
 .header__link {
   text-decoration: none;
   color: #fff;
+  display: block;
 }
-
-.header__link-town {
+.header__link--vel {
+  margin-bottom: 2px;
+}
+.header__link--mtc {
+  margin-bottom: 8px;
+}
+.header__link--town {
   font-size: 17px;
   font-weight: 300;
   line-height: 16px;
   letter-spacing: 0em;
   text-align: center;
-  padding-left: 50px;
 }
 
 .header__image {
   display: none;
 }
 
-.header__link-social {
+.header__link--social {
   display: none;
   font-size: 14px;
   font-weight: 500;
@@ -42,31 +49,31 @@
     min-width: 768px;
     min-height: 79px;
     padding-top: 30px;
-    padding-left: 312px;
-  }
-  .header__list {
     display: flex;
+    align-items: end;
+    padding-right: 20px;
   }
-  .header__item {
-    display: inline;
-  }
-  .header__link-vel,
-  .header__link-mtc {
+  .header__link--vel,
+  .header__link--mtc {
     display: none;
   }
-  .header__link-town {
+  .header__link--town {
     padding: 0;
     font-size: 12px;
     font-weight: 500;
     line-height: 16px;
     letter-spacing: 0em;
-    margin-right: 182px;
+    margin-right: 230px;
   }
-  .header__link-town::before {
+  .header__item {
+    display: inline-block;
+  }
+  .header__link--town::before {
     content: url(../images/header/town.svg);
     margin-right: 9px;
   }
-  .header__link-social {
+  .header__link--social {
+    position: relative;
     display: block;
     font-size: 14px;
     font-weight: 500;
@@ -74,8 +81,10 @@
     letter-spacing: 0em;
     width: 100px;
   }
-  .header__image {
-    display: initial;
-    margin-right: 9px;
+  .header__link--social::before {
+    position: absolute;
+    top: 4px;
+    left: -35px;
+    content: url(../images/header/social.svg);
   }
 }
