@@ -1,139 +1,109 @@
 .intro {
-  background-image: url(../images/intro/background.svg);
-  min-height: 333px;
+  background: url(../images/intro/background.svg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
   min-width: 321px;
-  position: relative;
-  padding-left: 40px;
+  min-height: 333px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding-top: 26px;
+  box-sizing: border-box;
 }
-.intro__list {
-  display: flexbox;
-}
-.intro__item {
-  position: relative;
-  margin: 0;
-  padding: 0;
-  justify-content: left;
-}
-.intro__logo {
-  margin-right: 9px;
+.intro__logo-321 {
   margin-bottom: 38px;
 }
-.intro__logo-text {
-  text-align: start;
-  font-style: italic;
-  font-weight: 900;
-  font-size: 20px;
-  line-height: 21px;
+.intro__logo-768,
+.intro__logo-1440,
+.intro__navigation {
+  display: none;
 }
-.intro__header {
-  font-size: 18px;
-  font-style: italic;
-  font-weight: 900;
-  line-height: 21px;
-  letter-spacing: 0em;
-  text-align: left;
-}
-.intro__description {
+.intro__info {
   font-size: 25px;
   font-weight: 900;
   line-height: 25px;
   letter-spacing: 0em;
   text-align: center;
+  width: 194px;
   margin-bottom: 8px;
 }
-.intro__town {
-  display: none;
-}
 .intro__about {
-  font-style: normal;
-  font-weight: 300;
   font-size: 20px;
+  font-weight: 300;
   line-height: 23px;
+  letter-spacing: 0em;
   text-align: center;
-  padding-left: 65px;
-  margin-bottom: 18px;
-}
-.intro__item {
-  display: flex;
-}
-.intro__item-button {
-  padding-left: 80px;
+  margin-bottom: 9px;
 }
 .intro__button {
   width: 93px;
   height: 28px;
-  background: linear-gradient(95.2deg, #b90160 2.23%, #2e3192 99.51%);
   border-radius: 7px;
+  background: linear-gradient(95.2deg, #b90160 2.23%, #2e3192 99.51%);
   margin-bottom: 53px;
 }
 .intro__button-text {
-  font-style: normal;
-  font-weight: 900;
+  text-transform: uppercase;
   font-size: 10px;
+  font-weight: 900;
   line-height: 12px;
-  text-align: center;
-  color: #ffffff;
+  letter-spacing: 0em;
+  color: rgba(255, 255, 255, 1);
 }
 .intro__outro {
-  font-style: normal;
-  font-weight: 400;
   font-size: 20px;
+  font-weight: 400;
   line-height: 23px;
+  letter-spacing: 0em;
   text-align: center;
-  padding-left: 15px;
 }
 .intro__outro-eva {
-  padding: 0;
+  text-transform: uppercase;
   color: #b90160;
 }
 @media (min-width: 768px) {
   .intro {
-    justify-content: left;
-    padding-top: 62px;
-    padding-left: 66px;
-    padding-right: 450px;
-    min-width: 768px;
-    min-height: 566px;
     background: url(../images/intro/background768px.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    min-height: 615px;
+    min-width: 768px;
+    align-items: start;
+    padding-top: 61px;
+    padding-left: 66px;
   }
-  .intro__logo {
-    width: 100px;
-    height: 60px;
+  .intro__logo-768 {
+    display: block;
     margin-bottom: 61px;
   }
-  .intro__logo-text {
-    font-size: 36px;
-    font-style: italic;
-    font-weight: 900;
-    line-height: 42px;
-    letter-spacing: 0em;
-    text-align: left;
-    margin-bottom: 9px;
+  .intro__logo-321,
+  .intro__logo-1440,
+  .intro__navigation {
+    display: none;
   }
-  .intro__description {
+  .intro__info {
     font-size: 40px;
     font-weight: 900;
     line-height: 40px;
     letter-spacing: 0em;
     text-align: left;
+    width: 414px;
+    margin-bottom: 10px;
   }
   .intro__about {
-    display: none;
-  }
-  .intro__town {
-    display: block;
     font-size: 24px;
     font-weight: 300;
     line-height: 28px;
     letter-spacing: 0em;
     text-align: left;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
   .intro__button {
-    height: 42px;
     width: 141px;
-    border-radius: 7px;
+    height: 42px;
+    margin-bottom: 206px;
   }
   .intro__button-text {
     font-size: 15px;
@@ -142,10 +112,12 @@
     letter-spacing: 0em;
     text-align: center;
   }
-  .intro__item-button {
-    padding: 0px;
-  }
   .intro__outro {
-    display: none;
+    padding-left: 60px;
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 59px;
+    letter-spacing: 0em;
+    text-align: center;
   }
 }
