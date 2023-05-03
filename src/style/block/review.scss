@@ -67,3 +67,31 @@
     margin-bottom: 9px;
   }
 }
+@media (min-width: 1440px) {
+  .review {
+    min-width: 1440px;
+    min-height: 357px;
+  }
+  .review__list {
+    display: flex;
+  }
+  .review__card {
+    width: 536px;
+    min-height: 187px;
+    margin: 0 70px 0 70px;
+  }
+  .review__feedback {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+  .review__initials {
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 15px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+}

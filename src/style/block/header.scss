@@ -79,12 +79,69 @@
     font-weight: 500;
     line-height: 14px;
     letter-spacing: 0em;
-    width: 100px;
+    width: 170px;
+    padding-left: 35px;
+    box-sizing: border-box;
   }
   .header__link--social::before {
+    content: url(../images/header/social.svg);
     position: absolute;
     top: 4px;
-    left: -35px;
-    content: url(../images/header/social.svg);
+    left: -2px;
+  }
+}
+@media (min-width: 1440px) {
+  .header {
+    min-width: 1440px;
+    min-height: 77px;
+    padding-top: 36px;
+    padding-right: 0;
+    align-items: normal;
+    padding-top: 23px;
+    padding-left: 128px;
+  }
+  .header__link--vel,
+  .header__link--mtc {
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 10px;
+    letter-spacing: 0em;
+    text-align: left;
+    width: 173px;
+    min-height: 15px;
+    display: block;
+    margin-bottom: 0px;
+    margin-right: 176px;
+  }
+  .header__link--vel {
+    width: 208px;
+    position: relative;
+    padding-left: 35px;
+    box-sizing: border-box;
+    margin-right: 12px;
+  }
+  .header__link--vel::before {
+    content: url(../images/header/call.svg);
+    position: absolute;
+    top: -5px;
+    left: -1px;
+  }
+
+  .header__link--town {
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-right: 367px;
+  }
+  .header__link--social {
+    width: 163px;
+    min-height: 25px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 14px;
+    letter-spacing: 0em;
+    text-align: left;
   }
 }

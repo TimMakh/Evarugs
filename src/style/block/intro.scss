@@ -11,11 +11,9 @@
   padding-top: 26px;
   box-sizing: border-box;
 }
-.intro__logo-321 {
+.intro__logo-icon {
   margin-bottom: 38px;
 }
-.intro__logo-768,
-.intro__logo-1440,
 .intro__navigation {
   display: none;
 }
@@ -37,20 +35,21 @@
   margin-bottom: 9px;
 }
 .intro__button {
+  padding: 0;
   width: 93px;
   height: 28px;
   border-radius: 7px;
   background: linear-gradient(95.2deg, #b90160 2.23%, #2e3192 99.51%);
   margin-bottom: 53px;
-}
-.intro__button-text {
   text-transform: uppercase;
   font-size: 10px;
   font-weight: 900;
   line-height: 12px;
   letter-spacing: 0em;
   color: rgba(255, 255, 255, 1);
+  border: 0;
 }
+
 .intro__outro {
   font-size: 20px;
   font-weight: 400;
@@ -74,12 +73,9 @@
     padding-top: 61px;
     padding-left: 66px;
   }
-  .intro__logo-768 {
-    display: block;
+  .intro__logo-icon {
     margin-bottom: 61px;
   }
-  .intro__logo-321,
-  .intro__logo-1440,
   .intro__navigation {
     display: none;
   }
@@ -104,6 +100,11 @@
     width: 141px;
     height: 42px;
     margin-bottom: 206px;
+    font-size: 15px;
+    font-weight: 900;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: center;
   }
   .intro__button-text {
     font-size: 15px;
@@ -119,5 +120,71 @@
     line-height: 59px;
     letter-spacing: 0em;
     text-align: center;
+  }
+}
+@media (min-width: 1440px) {
+  .intro {
+    min-width: 1440px;
+    min-height: 825px;
+    background: url(../images/intro/background1440.svg);
+    background-repeat: no-repeat;
+    padding-top: 47px;
+    padding-left: 121px;
+    position: relative;
+  }
+  .intro__logo-icon{
+    margin-bottom: 190px;
+  }
+  .intro__navigation {
+    display: block;
+    justify-content: end;
+    position: absolute;
+    left: 920px;
+  }
+  .intro__navigation-list {
+    display: block;
+  }
+  .intro__navigation-item {
+    display: inline-block;
+    width: 80px;
+    margin-right: 25px;
+  }
+  .intro__navigation-link {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #737373;
+    text-decoration: none;
+  }
+  .intro__info {
+    width: 670px;
+    font-size: 50px;
+    font-weight: 900;
+    line-height: 59px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-bottom: 10px;
+  }
+  .intro__about {
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+  .intro__button {
+    width: 179px;
+    height: 53px;
+    font-size: 20px;
+    font-weight: 900;
+    line-height: 23px;
+    letter-spacing: 0em;
+    text-align: center;
+    margin-bottom: 219px;
+  }
+  .intro__outro {
+    padding-left: 418px;
   }
 }

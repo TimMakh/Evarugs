@@ -32,24 +32,28 @@
     </header>
     <main class="main">
       <section class="intro">
-        <img
-          class="intro__logo-321"
-          width="183px"
-          height="36px"
-          src="./images/intro/logo321.png"
-          alt="Evarug logo." />
-        <img
-          class="intro__logo-768"
-          width="281px"
-          height="60px"
-          src="./images/intro/logo768.png"
-          alt="Evarug logo." />
-        <img
-          class="intro__logo-1440"
-          width="268px"
-          height="60px"
-          src="./images/intro/logo1440.png"
-          alt="Evarug logo." />
+        <a href="intro__logo">
+          <picture>
+            <source
+              media="(min-width: 768 px)"
+              srcset="images/intro/logo768.png 1x"
+              with="281px"
+              height="60px"
+              type="image/png">
+            <source
+              media="(min-width: 1440px)"
+              with="268px"
+              height="60px"
+              srcset="./images/intro/logo1440.png 1x"
+              type="image/png">
+            <img
+              class="intro__logo-icon"
+              srcset="./images/intro/logo321.png"
+              width="183px"
+              height="36px"
+              alt="Логотип.">
+          </picture>
+        </a>
         <nav class="intro__navigation">
           <ul class="intro__navigation-list">
             <li class="intro__navigation-item">
@@ -59,14 +63,14 @@
                 >отзывы</a
               >
             </li>
-            <li class="navigation__item">
+            <li class="intro__navigation-item">
               <a
                 class="intro__navigation-link intro__navigation-link--info"
                 href="#"
                 >что это?</a
               >
             </li>
-            <li class="navigation__item">
+            <li class="intro__navigation-item">
               <a
                 class="intro__navigation-link intro__navigation-link--contact"
                 href="#"
@@ -77,9 +81,7 @@
         </nav>
         <h3 class="intro__info">Инновационные коврики для автомобиля</h3>
         <span class="intro__about">в вашем городе</span>
-        <button class="intro__button">
-          <span class="intro__button-text"> заказать</span>
-        </button>
+        <button class="intro__button">заказать</button>
         <p class="intro__outro">
           Что такое <span class="intro__outro-eva">eva</span> коврики?
         </p>
@@ -93,13 +95,15 @@
               height="172px"
               src="./images/main/card1.jpg"
               alt="Эва коврик." />
-            <h3 class="product__header">МАТЕРИАЛ</h3>
-            <p class="product__description">
-              Коврики EVA всесезонные и отличаются уникальной поверхностью
-              материала с ячейками ромбовидной формы. Из-за чего вода не
-              проливается при изъятии ковра и не плещется при езде. Коврики воду
-              не пропускают.
-            </p>
+            <div class="product__info">
+              <h3 class="product__header">МАТЕРИАЛ</h3>
+              <p class="product__description">
+                Коврики EVA всесезонные и отличаются уникальной поверхностью
+                материала с ячейками ромбовидной формы. Из-за чего вода не
+                проливается при изъятии ковра и не плещется при езде. Коврики
+                воду не пропускают.
+              </p>
+            </div>
           </li>
           <li class="product__card">
             <img
@@ -108,13 +112,15 @@
               height="172px"
               src="./images/main/card2.jpg"
               alt="Эва коврик." />
-            <h3 class="product__header">ОТЛИЧИЯ</h3>
-            <p class="product__description">
-              Резиновые коврики загибаются и лезут на педали. EVA коврики такого
-              не допустят! Специальные липучки держат его в одном положении. При
-              желании, для водителя устанавливается подпятник из рельефного
-              алюминия.
-            </p>
+            <div class="product__info">
+              <h3 class="product__header">ОТЛИЧИЯ</h3>
+              <p class="product__description">
+                Резиновые коврики загибаются и лезут на педали. EVA коврики
+                такого не допустят! Специальные липучки держат его в одном
+                положении. При желании, для водителя устанавливается подпятник
+                из рельефного алюминия.
+              </p>
+            </div>
           </li>
           <li class="product__card">
             <img
@@ -123,13 +129,15 @@
               height="172px"
               src="./images/main/card3.jpg"
               alt="Эва коврик." />
-            <h3 class="product__header">РАСЦВЕТКА</h3>
-            <p class="product__description">
-              Автомобильные коврики EVA можно заказать и в индивидуальных
-              размерах и в разных цветах, которые комбинируется на выбор
-              покупателя с такими же цветами окантовочной полипропиленовой
-              ременной ленты.
-            </p>
+            <div class="product__info">
+              <h3 class="product__header">РАСЦВЕТКА</h3>
+              <p class="product__description">
+                Автомобильные коврики EVA можно заказать и в индивидуальных
+                размерах и в разных цветах, которые комбинируется на выбор
+                покупателя с такими же цветами окантовочной полипропиленовой
+                ременной ленты.
+              </p>
+            </div>
           </li>
         </ul>
       </section>
@@ -147,7 +155,7 @@
               заказов вам!!! Большое спасибо!
             </p>
             <hr class="review__decoration" />
-            <p class="review__initials">Константин В.</p>
+            <span class="review__initials">Константин В.</span>
           </li>
           <li class="review__card">
             <img
@@ -161,9 +169,9 @@
               человеку. Все очень понравилось. Буду советовать только вас.
             </p>
             <hr class="review__decoration" />
-            <p class="review__initials">Вера К.</p>
+            <span class="review__initials">Вера К.</span>
           </li>
-          <li class="review__card review__card--last">
+          <li class="review__card">
             <img
               class="review__foto"
               width="163px"
@@ -175,35 +183,73 @@
               супер! Заказывал на Ниссан.
             </p>
             <hr class="review__decoration" />
-            <p class="review__initials">Николай П.</p>
+            <span class="review__initials">Николай П.</span>
           </li>
         </ul>
       </section>
       <footer class="footer">
-        <p class="footer__contact-header">КОНТАКТНЫЕ ТЕЛЕФОНЫ</p>
-        <ul class="footer__contact">
-          <li class="footer__number footer__number--vel">
-            +375 29 292-29-29 (VEL)
-          </li>
-          <li class="footer__number footer__number--mtc">
-            +375 33 333-33-33 (МТС)
-          </li>
-        </ul>
-        <p class="footer__social">МЫ В СОЦИАЛЬНЫХ СЕТЯХ</p>
-        <a class="footer__social-link" href="#"
-          ><img
-            class="footer__social-img"
-            width="33px"
-            height="33px"
-            src="./images/footer/social.svg"
-            alt="instagramm logo."
-        /></a>
-        <span class="footer__about">О НАС</span>
-        <p class="footer__individually">
-          Индивидуальное изготовление EVA ковриков для вашего автомобиля
-        </p>
-        <p class="footer__town">ваш город</p>
+        <div class="footer__wrapper footer__wrapper--contact">
+          <h3 class="footer__contact-header">КОНТАКТНЫЕ ТЕЛЕФОНЫ</h3>
+          <ul class="footer__contact">
+            <a class="footer__link" href="#"
+              ><li class="footer__number footer__number--vel">
+                +375 29 292-29-29 (VEL)
+              </li>
+            </a>
+            <a class="footer__link" href="#"
+              ><li class="footer__number footer__number--mtc">
+                +375 33 333-33-33 (МТС)
+              </li></a
+            >
+          </ul>
+        </div>
+        <div class="footer__wrapper footer__wrapper--social">
+          <h3 class="footer__social">МЫ В СОЦИАЛЬНЫХ СЕТЯХ</h3>
+          <a class="footer__social-link" href="#"
+            ><img
+              class="footer__social-img"
+              .
+              width="33px"
+              height="33px"
+              src="./images/footer/social.svg"
+              alt="instagramm logo."
+          /></a>
+        </div>
+        <div class="footer__wrapper footer__wrapper--about">
+          <h3 class="footer__about">О НАС</h3>
+          <p class="footer__individually">
+            Индивидуальное изготовление EVA ковриков для вашего автомобиля
+          </p>
+          <span class="footer__town">ваш город</span>
+        </div>
       </footer>
     </main>
+    <div class="modal">
+      <div class="modal__content">
+        <form class="modal__form">
+          <h3 class="modal__header">ФОРМА ЗАЯВКИ</h3>
+          <div class="modal__first-stroke">
+            <input
+              class="modal__input modal__input--name"
+              placeholder="Ваше имя"
+              type="text" />
+            <input
+              class="modal__input modal__input--email"
+              placeholder="Ваш e-mail"
+              type="text" />
+          </div>
+          <textarea
+            placeholder="Ваше сообщение (марка автомобиля, цвет ковриков, номер телефона)"
+            class="modal__textarea"
+            name=""
+            cols="60"
+            rows="10"></textarea>
+          <div class="modal__wrapper">
+            <button class="modal__button">отправить</button>
+          </div>
+        </form>
+      </div>
+      <div class="overlay"></div>
+    </div>
   </body>
 </html>
