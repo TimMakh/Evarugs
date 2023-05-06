@@ -1,6 +1,7 @@
 const buttonElem = document.querySelector(".intro__button");
 const modalElem = document.querySelector(".modal");
 const buttonCloseElem = document.querySelector(".modal__button");
+const modalCloseElem = document.querySelector(".overlay");
 
 const openModal = () => {
   modalElem.style.visibility = "visible";
@@ -11,7 +12,7 @@ const openModal = () => {
 const closeModal = (event) => {
   const target = event.target;
 
-  if (target === modalElem) {
+  if (target === buttonCloseElem || target === modalCloseElem) {
     modalElem.style.visibility = "hidden";
     modalElem.style.opacity = 0;
     modalElem.style.zIndex = -1;
