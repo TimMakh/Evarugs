@@ -1,15 +1,14 @@
 .product {
   min-height: 1330px;
   min-width: 321px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
   padding-top: 42px;
   box-sizing: border-box;
 }
+.product__list {
+  margin: 0 auto;
+  max-width: 260px;
+}
 .product__card {
-  display: flex;
-  flex-direction: column;
   width: 264px;
   border-radius: 9px;
   box-shadow: 0px 0px 40px 0px rgba(184, 0, 95, 0.2);
@@ -18,7 +17,9 @@
 }
 .product__image {
   border-radius: 9px 9px 0 0;
-  margin-bottom: 15px;
+}
+.product__info {
+  padding: 15px 25px 0 17px;
 }
 .product__header {
   font-size: 30px;
@@ -27,7 +28,6 @@
   letter-spacing: 0em;
   text-align: left;
   margin-bottom: 4px;
-  padding-left: 17px;
 }
 .product__description {
   font-size: 14px;
@@ -36,8 +36,6 @@
   letter-spacing: 0em;
   text-align: left;
   color: rgba(118, 118, 118, 1);
-  padding-left: 17px;
-  padding-right: 25px;
   box-sizing: border-box;
   margin-bottom: 18px;
 }
@@ -47,6 +45,9 @@
     min-height: 1250px;
     padding-top: 48px;
   }
+  .product__list {
+    max-width: 570px;
+  }
   .product__card {
     width: 594px;
     min-height: 325px;
@@ -55,15 +56,55 @@
   .product__image {
     width: 594px;
     height: 160px;
-    margin-bottom: 17px;
+  }
+  .product__info {
+    padding: 22px 56px 0px 38px;
   }
   .product__header {
     font-size: 36px;
     line-height: 42px;
-    padding-left: 38px;
   }
   .product__description {
-    padding-left: 38px;
     margin-bottom: 0;
+  }
+}
+@media (min-width: 1440px) {
+  .product {
+    min-width: 1440px;
+    min-height: 759px;
+    padding-top: 120px;
+    padding-left: 143px;
+  }
+  .product__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0;
+    min-width: 1154px;
+  }
+  .product__card {
+    width: 344px;
+    min-height: 414px;
+  }
+  .product__image {
+    height: 207px;
+    width: 344px;
+  }
+  .product__info {
+    padding: 23px 33px 0 22px;
+  }
+  .product__header {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 42px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+  .product__description {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
   }
 }
